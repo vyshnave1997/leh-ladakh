@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leh Ladkh</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">LEH LADAKH</div>
+            <div class="links">
+            <ul>
+                <li><a href="#about">About Camp</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#sign-in">Sign In</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover Leh Ladakh </h1>
+            <p>Where Adventure Meets Tranquility</p>
+            
+            
+        </div>
+    </section>
+    <section id="locations">
+        <h1 class="location-head">Destination Highlights</h1>
+        <div class="locations">
+        
+            <div class="loc-left">
+                <p class="location-number">01 / 12</p>
+                <h2>Pangong Lake</h2>
+                <p class="subtext">High altitude river</p>
+                <div class="loc-left-content">
+                    <span class="prev">←</span>
+                    <span class="next">→</span>
+                </div>
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide">
+                            <img src="./assets/pang-1.jpg" alt="Image 1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="info-section">
+                <h3></h3>
+                <p>
+                    A stunning high-altitude lake located at an elevation of 4,350 meters, Pangong Lake is known for its crystal-clear blue waters that change colors throughout the day. It spans India and China, with 60% of the lake in China.
+                </p>
+                <p>
+                    Cold desert climate. Summers are mild, with daytime temperatures around 5°C to 20°C. Winters are harsh, with temperatures dropping as low as -25°C.
+                </p>
+                <p>Best Time to Visit: May to September.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="trip">
+        <div class="trip-section">
+            <div class="itinerary">
+                <div class="days">
+                    <button class="day-btn" aria-label="Show details for Day 1" onclick="showDay(1)">Day 1: Arrival in Leh</button>
+                    <button class="day-btn" aria-label="Show details for Day 2" onclick="showDay(2)">Day 2: Leh Local Sightseeing</button>
+                    <button class="day-btn" aria-label="Show details for Day 3" onclick="showDay(3)">Day 3: Leh to Nubra Valley</button>
+                    <button class="day-btn" aria-label="Show details for Day 4" onclick="showDay(4)">Day 4: Nubra Valley to Pangong Lake</button>
+                    <button class="day-btn" aria-label="Show details for Day 5" onclick="showDay(5)">Day 5: Pangong Lake to Leh</button>
+                    <button class="day-btn" aria-label="Show details for Day 6" onclick="showDay(6)">Day 6: Day Trip to Tso Moriri</button>
+                    <button class="day-btn" aria-label="Show details for Day 7" onclick="showDay(7)">Day 7: Departure from Leh</button>
+                </div>
+    
+                <div id="itinerary-details" class="details">
+                    <div class="heading-trip">
+                        <h1>Plan Your Trip</h1>
+                    </div> <!-- Day itinerary details will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="special">
+        <div class="special-overlay">
+                <h1>Trekking Routes</h1>
+            <div class="special-content">
+                <div class="card-container">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <img src="./assets/chadar.jpg" alt="Chadar Trek" class="card-img">
+                        <div class="card-content">
+                            <h2>Chadar Trek</h2>
+                            <p>Walk on the frozen Zanskar River in this thrilling winter trek. Best done from January to February.</p>
+                            <ul class="card-details">
+                                <li><strong>Difficulty:</strong> Challenging</li>
+                                <li><strong>Time:</strong> 9 Days</li>
+                                <li><strong>Climate:</strong> Extremely Cold (-15°C to -25°C)</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <img src="./assets/marka.jpg" alt="Markha Valley Trek" class="card-img">
+                        <div class="card-content">
+                            <h2>Markha Valley Trek</h2>
+                            <p>This trek takes you through remote villages and beautiful valleys, offering a great cultural experience.</p>
+                            <ul class="card-details">
+                                <li><strong>Difficulty:</strong> Moderate</li>
+                                <li><strong>Time:</strong> 7-9 Days</li>
+                                <li><strong>Climate:</strong> Mild (10°C to 20°C)</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <img src="./assets/kankri.jpg" alt="Stok Kangri Trek" class="card-img">
+                        <div class="card-content">
+                            <h2>Stok Kangri Trek</h2>
+                            <p>A challenging trek that takes you to the summit of Stok Kangri, one of the highest peaks in the region.</p>
+                            <ul class="card-details">
+                                <li><strong>Difficulty:</strong> Strenuous</li>
+                                <li><strong>Time:</strong> 8-10 Days</li>
+                                <li><strong>Climate:</strong> Cold (0°C to 15°C)</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <!-- Card 4 -->
+                    <div class="card">
+                        <img src="./assets/rum.jpg" alt="Rumbak Valley Trek" class="card-img">
+                        <div class="card-content">
+                            <h2>Rumbak Valley Trek</h2>
+                            <p>Explore the remote Rumbak Valley, where you might spot rare wildlife like snow leopards and blue sheep.</p>
+                            <ul class="card-details">
+                                <li><strong>Difficulty:</strong> Moderate</li>
+                                <li><strong>Time:</strong> 5-6 Days</li>
+                                <li><strong>Climate:</strong> Cold (0°C to 10°C)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>  
+        </div>
+    </section>
+
+       <!-- Combined Section -->
+       <section class="stargazing">
+        <h1>Indian Astronomical Observatory of Hanle, Ladakh</h1>
+        <!-- Text Content on the Left -->
+         <div class="stargazing-section">
+        <div class="text-content">
+            <h2>Hanle Observatory</h2>
+            <p>Located just 10 kilometers from Leh city, the Leh Observatory is an ideal spot for stargazing. Nestled in the high-altitude desert of Ladakh, the observatory offers some of the clearest skies for celestial observations. The observatory is well-equipped with telescopes, and you can catch breathtaking views of stars, planets, and even the Milky Way!</p>
+
+            <h2>Permit Information</h2>
+            <p>To visit the Leh Observatory, you will need a special permit, which can be obtained at the local tourist office in Leh. The permit typically costs around ₹200 per person. Make sure to carry a valid ID (Aadhar or Passport) when applying for the permit.</p>
+
+            <h2>Climate and Best Time to Visit</h2>
+            <p>The climate in Leh is cold and dry, with temperatures ranging from 5°C to -15°C during stargazing months. The best time for stargazing is from <strong>September to March</strong>, when the skies are clearest and there is minimal light pollution. Remember to bundle up as temperatures can drop drastically at night!</p>
+
+            <h2>Distance from Leh</h2>
+            <p>The Leh Observatory is located just 10 km from Leh City. It’s a quick 20-minute drive, making it easily accessible for tourists staying in the city. Public transport and taxis are available for visitors.</p>
+        </div>
+
+        <!-- Image Gallery on the Right -->
+        <div class="image-content">
+            
+            <img src="./assets/stars.jpeg" alt="Starry Sky at Leh" class="gallery-img">
+            <img src="./assets/stars2.jpg" alt="Starry Sky at Leh" class="gallery-img">
+            
+        </div>
+    </div>
+    </section>
+
+    <section class="bike-routes">
+        <div class="bike-head">Motor rides</div>
+        <div class="route-card" id="route1">
+            <h2>Nubra Valley Circuit</h2>
+            <p><strong>Distance:</strong> 140 km</p>
+            <p><strong>Difficulty:</strong> Moderate</p>
+            <p><strong>Best Time:</strong> June to September</p>
+            <button class="toggle-deta" onclick="toggleDetails('details1')">View Details</button>
+            <div class="deta" id="details1">
+                <div class="deta-container">
+               
+                    <p>This circuit takes you through the stunning Nubra Valley, passing over the famous Khardung La Pass. Experience the unique landscapes and culture of the region.  <br />Average Altitude: 3,048 meters (10,000 feet) above sea level
+                        <br />
+                        Temperature Range:<br />
+                        
+                        Summer (June to September): 10°C to 25°C (50°F to 77°F)<br />
+                        Winter (October to May): -5°C to -20°C (23°F to -4°F)<br />
+                        Pressure: Due to the high altitude, the air pressure is lower, but less extreme than higher passes like Khardung La. Acclimatization is still recommended.<br />
+                        
+                        Terrain: A mix of paved roads and rugged trails, with steep ascents and descents, especially over Khardung La.<br />
+                        
+                        Route Highlights:<br />
+                        
+                        Khardung La Pass: One of the highest motorable roads in the world at 5,359 meters (17,582 feet). The pass offers breathtaking views of the Himalayas and is a major attraction on the way to Nubra Valley.<br />
+                        Nubra Valley: Known for its unique landscape of sand dunes, lush green oasis, and the Shyok and Nubra rivers. The valley is often referred to as the "Valley of Flowers."<br />
+                        Diskit Monastery: The largest and oldest monastery in Nubra, home to a 32-meter tall Maitreya Buddha statue offering panoramic views of the valley.<br />
+                        Hunder Sand Dunes: Famous for its white sand dunes, where you can experience camel rides on double-humped Bactrian camels, unique to the region.<br />
+                        Cultural Experience: Explore the villages of Nubra Valley, including the towns of Hunder and Sumur, where you can witness the traditional Ladakhi way of life.</p>
+                    <img src="./assets/nubra.jpg" alt="">
+                </div>
+               </div>
+        </div>
+
+        <div class="route-card" id="route2">
+            <h2>Pangong Lake Circuit</h2>
+            <p><strong>Distance:</strong> 160 km</p>
+            <p><strong>Difficulty:</strong> Challenging</p>
+            <p><strong>Best Time:</strong> May to October</p>
+            <button class="toggle-deta" onclick="toggleDetails('details2')">View Details</button>
+            <div class="deta" id="details2">
+                <div class="deta-container">
+                <p>Ride to the mesmerizing Pangong Lake, famous for its clear blue waters. The route takes you through rugged terrains and Chang La Pass.<br />Average Altitude: 4,350 meters (14,270 feet) above sea level
+                    <br />Temperature Range:<br />
+                    Summer (May to August): 5°C to 25°C (41°F to 77°F)<br />
+                    Winter (October to April): -10°C to -25°C (14°F to -13°F)<br />
+                    Pressure: Atmospheric pressure decreases significantly due to high altitude. Oxygen levels are lower, making acclimatization important.<br />
+                    Terrain: Rugged and off-road, crossing through Chang La Pass (5,360 meters), one of the highest motorable roads in the world.<br />
+                    Route Highlights:<br />
+                    Pangong Lake: Known for its mesmerizing blue waters, the lake's color changes throughout the day due to the sunlight.<br />
+                    Chang La Pass: A thrilling ride through snow-capped mountains and steep ascents.<br />
+                    Scenic Beauty: The route offers panoramic views of the Himalayas, barren landscapes, and occasional wildlife sightings, including marmots and wild yaks.</p>
+                    
+                    <img src="./assets/pang-2.jpg" alt="">
+            </div>
+            </div>
+        </div>
+
+        <div class="route-card" id="route3">
+            <h2>Tso Moriri Circuit</h2>
+            <p><strong>Distance:</strong> 220 km</p>
+            <p><strong>Difficulty:</strong> Advanced</p>
+            <p><strong>Best Time:</strong> June to September</p>
+            <button class="toggle-deta" onclick="toggleDetails('details3')">View Details</button>
+            <div class="deta" id="details3">
+                <div class="deta-container">
+                <p>This circuit takes you to the high-altitude Tso Moriri Lake, known for its peaceful surroundings and pristine beauty. It's a challenging route with rewarding views.
+                <br />Average Altitude: 4,522 meters (14,836 feet) above sea level<br />
+
+Temperature Range:<br />
+
+Summer (June to September): 0°C to 20°C (32°F to 68°F)<br />
+Winter (October to May): -10°C to -30°C (14°F to -22°F)<br />
+Pressure: The high altitude results in lower atmospheric pressure and oxygen levels, making acclimatization essential.<br />
+
+Terrain: The route is mostly off-road with rough patches, steep climbs, and unpredictable weather conditions.<br />
+
+Route Highlights:<br />
+
+Tso Moriri Lake: A serene, high-altitude lake known for its crystal-clear waters and surrounding snow-capped mountains. The lake is a vital habitat for migratory birds and is part of the Tso Moriri Wetland Conservation Reserve.<br />
+Korzok Village: The highest settlement near the lake, inhabited by nomads. It offers a glimpse of the unique culture of the Changpa people.<br />
+Wildlife: The region is home to rare species such as Tibetan wolves, snow leopards, and the famous Kiang (Tibetan wild ass).<br />
+Scenic Views: Majestic landscapes with rugged mountains, open plains, and stunning vistas of the remote Ladakh region.<br />
+                </p>
+                <img src="./assets/tso.jpg" alt="" 
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
